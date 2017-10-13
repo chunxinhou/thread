@@ -6,7 +6,10 @@ package com.thread.test;
 public class Test {
 
     public  static void main(String[] args){
-        System.out.println("hello thread");
+        TestCurrentThread testCurrentThread = new TestCurrentThread(5);
+
+        String s =testCurrentThread.getThread();
+        System.out.println(s);
     }
 
 }
